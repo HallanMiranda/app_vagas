@@ -21,12 +21,13 @@ if uploaded_file is not None:
     # Normalizar os nomes das colunas
     data = clean_data(data)
 
-    # Verificar se a coluna esperada está presente
-    if 'nome' in data.columns:
+    # Verificar se as colunas essenciais existem
+    required_columns = {'posicao', 'titulo_vaga', 'requisitos'}
+    if required_columns.issubset(set(data.columns)):
         st.sidebar.header("Configurações de Filtros")
 
         # Filtros laterais
-        posicao_options = ["Todas"] + sorted(data['nome'].dropna().unique().tolist())
+        posicao_options = ["Todas"] + sorted(data['posicao'].dropna().unique().tolist())
         posicao_selecionada = st.sidebar.selectbox("Selecione a posição:", options=posicao_options)
 
         # Filtro avançado para título da vaga
@@ -40,14 +41,14 @@ if uploaded_file is not None:
 
         # Filtro por posição
         if posicao_selecionada != "Todas":
-            filtered_data = filtered_data[filtered_data['nome'] == posicao_selecionada]
+            filtered_data = filtered_data[filtered_data['posicao'] == posicao_selecionada]
 
         # Filtro por múltiplos termos no título da vaga
         if titulo_vaga_input:
             termos_busca = [termo.strip() for termo in titulo_vaga_input.split(',')]
             regex_pattern = '|'.join(termos_busca)
             filtered_data = filtered_data[
-                filtered_data['nome'].str.contains(regex_pattern, case=False, na=False)
+                filtered_data['titulo_vaga'].str.contains(regex_pattern, case=False, na=False)
             ]
 
         # Mostrar estatísticas gerais
@@ -57,34 +58,33 @@ if uploaded_file is not None:
         st.write("Distribuição de Ferramentas Requisitadas:")
 
         # Contar as ferramentas
-        if 'ferramentas' in filtered_data.columns:
-            tool_counts = (
-                filtered_data['ferramentas']
-                .str.split(', ')
-                .explode()
-                .value_counts()
-            )
+        tool_counts = (
+            filtered_data['requisitos']
+            .str.split(', ')
+            .explode()
+            .value_counts()
+        )
 
-            # Preparar os dados para o gráfico
-            tool_counts_df = tool_counts.head(20).reset_index()
-            tool_counts_df.columns = ['Ferramenta', 'Quantidade']
+        # Preparar os dados para o gráfico
+        tool_counts_df = tool_counts.head(20).reset_index()
+        tool_counts_df.columns = ['Ferramenta', 'Quantidade']
 
-            # Criar o gráfico interativo com Plotly
-            fig = px.bar(
-                tool_counts_df,
-                x='Quantidade',
-                y='Ferramenta',
-                orientation='h',
-                text='Quantidade',
-                labels={'Quantidade': 'Quantidade de Ocorrências', 'Ferramenta': 'Ferramentas'},
-                title="Top 20 Ferramentas Mais Requisitadas"
-            )
-            fig.update_traces(textposition='outside')
-            fig.update_layout(
-                yaxis=dict(autorange="reversed"),
-                margin=dict(l=150, r=50, t=50, b=50)
-            )
-            st.plotly_chart(fig, use_container_width=True)
+        # Criar o gráfico interativo com Plotly
+        fig = px.bar(
+            tool_counts_df,
+            x='Quantidade',
+            y='Ferramenta',
+            orientation='h',
+            text='Quantidade',
+            labels={'Quantidade': 'Quantidade de Ocorrências', 'Ferramenta': 'Ferramentas'},
+            title="Top 20 Ferramentas Mais Requisitadas"
+        )
+        fig.update_traces(textposition='outside')
+        fig.update_layout(
+            yaxis=dict(autorange="reversed"),
+            margin=dict(l=150, r=50, t=50, b=50)
+        )
+        st.plotly_chart(fig, use_container_width=True)
 
         # Botão para baixar os dados filtrados
         st.header("Download de Dados Filtrados")
@@ -96,6 +96,7 @@ if uploaded_file is not None:
             mime="text/csv"
         )
     else:
-        st.error("A coluna 'nome' não foi encontrada no arquivo carregado.")
+        missing_columns = required_columns - set(data.columns)
+        st.error(f"O arquivo CSV não contém as colunas necessárias: {', '.join(missing_columns)}.")
 else:
     st.write("Carregue um arquivo CSV para começar a análise.")

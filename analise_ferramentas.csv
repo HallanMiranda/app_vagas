@@ -1,0 +1,176 @@
+Tool,Count
+power bi,88
+sql,60
+python,31
+excel,31
+etl,26
+banco de dados,16
+linguagem r,11
+sql server,10
+azure,10
+tableau,8
+power apps,8
+power automate,8
+"power bi, excel, power bi, excel, power bi, excel, power bi, excel, power bi, excel",6
+machine learning,6
+qlik view,6
+aws,5
+"brandwatch, google analytics, power bi, tableau., brandwatch, google analytics, power bi, tableau., brandwatch, google analytics, power bi, tableau., brandwatch, google analytics, power bi, tableau., brandwatch, google analytics, power bi, tableau.",5
+databricks,5
+vba,5
+google analytics,5
+tableau.,5
+brandwatch,5
+mysql,4
+"power bi, power bi, power bi, power bi, power bi",4
+api,4
+looker,4
+gcp,3
+power b.i,3
+dax,3
+power query,3
+dw,3
+excel.,3
+hadoop,2
+erp,2
+"power bi, excel, linguagem r, python, sql, etl, mlops, sql server, azure, power bi, excel, linguagem r, python, sql, etl, mlops, sql server, azure, power bi, excel, linguagem r, python, sql, etl, mlops, sql server, azure, power bi, excel, linguagem r, python, sql, etl, mlops, sql server, azure, power bi, excel, linguagem r, python, sql, etl, mlops, sql server, azure",2
+pacote office avançado,2
+power bi.,2
+"power bi, sql, power bi, sql, power bi, sql, power bi, sql, power bi, sql",2
+mlops,2
+"power b.i, excel, sql, power b.i, excel, sql, power b.i, excel, sql, power b.i, excel, sql, power b.i, excel, sql",2
+oracle,2
+"sql server, power bi, excel., sql server, power bi, excel., sql server, power bi, excel., sql server, power bi, excel., sql server, power bi, excel.",2
+totvs datasul,2
+"power bi, tableau, linguagem r, python, sql, looker, power bi, tableau, linguagem r, python, sql, looker, power bi, tableau, linguagem r, python, sql, looker, power bi, tableau, linguagem r, python, sql, looker, power bi, tableau, linguagem r, python, sql, looker",2
+"power bi, linguagem r, python, sql, etl, machine learning, power bi, linguagem r, python, sql, etl, machine learning, power bi, linguagem r, python, sql, etl, machine learning, power bi, linguagem r, python, sql, etl, machine learning, power bi, linguagem r, python, sql, etl, machine learning",2
+excel avançado,2
+bancos de dados,2
+r,2
+estatística,2
+etl.,2
+"power bi, excel, vba, power bi, excel, vba, power bi, excel, vba, power bi, excel, vba, power bi, excel, vba",2
+spark,2
+"power bi, tableau, linguagem r, python, sql, etl, aws, spark, azure, hadoop, power bi, tableau, linguagem r, python, sql, etl, aws, spark, azure, hadoop, power bi, tableau, linguagem r, python, sql, etl, aws, spark, azure, hadoop, power bi, tableau, linguagem r, python, sql, etl, aws, spark, azure, hadoop, power bi, tableau, linguagem r, python, sql, etl, aws, spark, azure, hadoop",2
+"power bi, excel, banco de dados, sql, power bi, excel, banco de dados, sql, power bi, excel, banco de dados, sql, power bi, excel, banco de dados, sql, power bi, excel, banco de dados, sql",2
+"power bi, excel, python, sql, databricks, azure, power apps, power automate, vba, power bi, excel, python, sql, databricks, azure, power apps, power automate, vba, power bi, excel, python, sql, databricks, azure, power apps, power automate, vba, power bi, excel, python, sql, databricks, azure, power apps, power automate, vba, power bi, excel, python, sql, databricks, azure, power apps, power automate, vba",2
+pacote office,2
+"excel, sql, big query, power bi, excel, sql, big query, power bi, excel, sql, big query, power bi, excel, sql, big query, power bi, excel, sql, big query, power bi",2
+oauth,2
+dax e linguagem m,2
+json,2
+dimensional,2
+"power bi, excel, sql, sql server, power bi, excel, sql, sql server, power bi, excel, sql, sql server, power bi, excel, sql, sql server, power bi, excel, sql, sql server",2
+odi,2
+"power bi, python, power bi, python, power bi, python, power bi, python, power bi, python",2
+relacional,2
+stage,2
+big query,2
+"power bi, sql, etl, power bi, sql, etl, power bi, sql, etl, power bi, sql, etl, power bi, sql, etl",2
+"power bi, python, sql, etl, aws, machine learning, gcp, git, azure, power bi, python, sql, etl, aws, machine learning, gcp, git, azure, power bi, python, sql, etl, aws, machine learning, gcp, git, azure, power bi, python, sql, etl, aws, machine learning, gcp, git, azure, power bi, python, sql, etl, aws, machine learning, gcp, git, azure",2
+qlik sense,2
+"power bi, qlik view, power bi, qlik view, power bi, qlik view, power bi, qlik view, power bi, qlik view",2
+git,2
+"power bi, python, sql, databricks, power bi, python, sql, databricks, power bi, python, sql, databricks, power bi, python, sql, databricks, power bi, python, sql, databricks",1
+m language,1
+"power bi, excel, banco de dados, etl, power bi, excel, banco de dados, etl, power bi, excel, banco de dados, etl, power bi, excel, banco de dados, etl, power bi, excel, banco de dados, etl",1
+"power bi, dax, m language, power apps, power automate, power query, api, banco de dados, sql, power bi, dax, m language, power apps, power automate, power query, api, banco de dados, sql, power bi, dax, m language, power apps, power automate, power query, api, banco de dados, sql, power bi, dax, m language, power apps, power automate, power query, api, banco de dados, sql, power bi, dax, m language, power apps, power automate, power query, api, banco de dados, sql",1
+crm,1
+"bi, excel, crm, bi, excel, crm, bi, excel, crm, bi, excel, crm, bi, excel, crm",1
+bi,1
+data warehouse,1
+"power bi, azure, etl, data warehouse, datalake, synapse, sql, dw, power bi, azure, etl, data warehouse, datalake, synapse, sql, dw, power bi, azure, etl, data warehouse, datalake, synapse, sql, dw, power bi, azure, etl, data warehouse, datalake, synapse, sql, dw, power bi, azure, etl, data warehouse, datalake, synapse, sql, dw",1
+qlikview / qliksense,1
+"power bi, sql, qlikview / qliksense, power bi, sql, qlikview / qliksense, power bi, sql, qlikview / qliksense, power bi, sql, qlikview / qliksense, power bi, sql, qlikview / qliksense",1
+datalake,1
+"power bi, linguagem r, python, sql, etl, sql server, power bi, linguagem r, python, sql, etl, sql server, power bi, linguagem r, python, sql, etl, sql server, power bi, linguagem r, python, sql, etl, sql server, power bi, linguagem r, python, sql, etl, sql server",1
+"power bi, banco de dados, sqlserver, pratica na extração, etl, power bi, banco de dados, sqlserver, pratica na extração, etl, power bi, banco de dados, sqlserver, pratica na extração, etl, power bi, banco de dados, sqlserver, pratica na extração, etl, power bi, banco de dados, sqlserver, pratica na extração, etl",1
+sqlserver,1
+"power bi, sql, power apps, power automate, power bi, sql, power apps, power automate, power bi, sql, power apps, power automate, power bi, sql, power apps, power automate, power bi, sql, power apps, power automate",1
+synapse,1
+pratica na extração,1
+linux,1
+"power bi, python, sql, sql server, power apps, power automate, power bi, python, sql, sql server, power apps, power automate, power bi, python, sql, sql server, power apps, power automate, power bi, python, sql, sql server, power apps, power automate, power bi, python, sql, sql server, power apps, power automate",1
+"power bi, python, sql, power bi, python, sql, power bi, python, sql, power bi, python, sql, power bi, python, sql",1
+"power bi, excel, python, etl, power bi, excel, python, etl, power bi, excel, python, etl, power bi, excel, python, etl, power bi, excel, python, etl",1
+"power bi, etl, gcp, mysql, power bi, etl, gcp, mysql, power bi, etl, gcp, mysql, power bi, etl, gcp, mysql, power bi, etl, gcp, mysql",1
+"power bi, tableau, sql, etl, qlik view, power bi, tableau, sql, etl, qlik view, power bi, tableau, sql, etl, qlik view, power bi, tableau, sql, etl, qlik view, power bi, tableau, sql, etl, qlik view",1
+airflow,1
+"power bi, linguagem r, python, sql, etl, azure, airflow, power bi, linguagem r, python, sql, etl, azure, airflow, power bi, linguagem r, python, sql, etl, azure, airflow, power bi, linguagem r, python, sql, etl, azure, airflow, power bi, linguagem r, python, sql, etl, azure, airflow",1
+"power bi, excel, linguagem r, python, sql, power bi, excel, linguagem r, python, sql, power bi, excel, linguagem r, python, sql, power bi, excel, linguagem r, python, sql, power bi, excel, linguagem r, python, sql",1
+"power bi, tableau, sql, etl, sql server, oracle, qlik view, mysql, power bi, tableau, sql, etl, sql server, oracle, qlik view, mysql, power bi, tableau, sql, etl, sql server, oracle, qlik view, mysql, power bi, tableau, sql, etl, sql server, oracle, qlik view, mysql, power bi, tableau, sql, etl, sql server, oracle, qlik view, mysql",1
+"power bi, estatística, sql, etl, power bi, estatística, sql, etl, power bi, estatística, sql, etl, power bi, estatística, sql, etl, power bi, estatística, sql, etl",1
+"power bi, etl, qlik view, power bi, etl, qlik view, power bi, etl, qlik view, power bi, etl, qlik view, power bi, etl, qlik view",1
+"sas, power bi, estatística, excel, python, sql, databricks, power apps, power automate, sas, power bi, estatística, excel, python, sql, databricks, power apps, power automate, sas, power bi, estatística, excel, python, sql, databricks, power apps, power automate, sas, power bi, estatística, excel, python, sql, databricks, power apps, power automate, sas, power bi, estatística, excel, python, sql, databricks, power apps, power automate",1
+sas,1
+"power bi, python, sql, etl, machine learning, sql server, qlik view, power bi, python, sql, etl, machine learning, sql server, qlik view, power bi, python, sql, etl, machine learning, sql server, qlik view, power bi, python, sql, etl, machine learning, sql server, qlik view, power bi, python, sql, etl, machine learning, sql server, qlik view",1
+"power bi, etl, linux, power bi, etl, linux, power bi, etl, linux, power bi, etl, linux, power bi, etl, linux",1
+"power bi, bancos de dados, sql, scrum e kanban., power bi, bancos de dados, sql, scrum e kanban., power bi, bancos de dados, sql, scrum e kanban., power bi, bancos de dados, sql, scrum e kanban., power bi, bancos de dados, sql, scrum e kanban.",1
+"power bi, python, sql, aws, power bi, python, sql, aws, power bi, python, sql, aws, power bi, python, sql, aws, power bi, python, sql, aws",1
+"power bi, python, sql, machine learning, databricks, power bi, python, sql, machine learning, databricks, power bi, python, sql, machine learning, databricks, power bi, python, sql, machine learning, databricks, power bi, python, sql, machine learning, databricks",1
+"power b.i, power b.i, power b.i, power b.i, power b.i",1
+"sql, excel avançado, power bi, looker, git., sql, excel avançado, power bi, looker, git., sql, excel avançado, power bi, looker, git., sql, excel avançado, power bi, looker, git., sql, excel avançado, power bi, looker, git.",1
+scrum e kanban.,1
+"power bi, sql, tableau, qlik sense, etl., power bi, sql, tableau, qlik sense, etl., power bi, sql, tableau, qlik sense, etl., power bi, sql, tableau, qlik sense, etl., power bi, sql, tableau, qlik sense, etl.",1
+"banco de dados, sql  power bi, pacote office avançado, banco de dados, sql  power bi, pacote office avançado, banco de dados, sql  power bi, pacote office avançado, banco de dados, sql  power bi, pacote office avançado, banco de dados, sql  power bi, pacote office avançado",1
+"power bi, bancos de dados, mysql, progress, banco de dados, erp, totvs datasul, power bi, bancos de dados, mysql, progress, banco de dados, erp, totvs datasul, power bi, bancos de dados, mysql, progress, banco de dados, erp, totvs datasul, power bi, bancos de dados, mysql, progress, banco de dados, erp, totvs datasul, power bi, bancos de dados, mysql, progress, banco de dados, erp, totvs datasul",1
+progress,1
+"power bi, banco de dados, sql, pacote office avançado, power bi, banco de dados, sql, pacote office avançado, power bi, banco de dados, sql, pacote office avançado, power bi, banco de dados, sql, pacote office avançado, power bi, banco de dados, sql, pacote office avançado",1
+"power bi, power query, dax, banco de dados, sql, power bi, power query, dax, banco de dados, sql, power bi, power query, dax, banco de dados, sql, power bi, power query, dax, banco de dados, sql, power bi, power query, dax, banco de dados, sql",1
+"odi, dw, stage, relacional, dimensional, banco de dados, sql, odi, dw, stage, relacional, dimensional, banco de dados, sql, odi, dw, stage, relacional, dimensional, banco de dados, sql, odi, dw, stage, relacional, dimensional, banco de dados, sql, odi, dw, stage, relacional, dimensional, banco de dados, sql",1
+testes a/b,1
+"power bi, banco de dados, sql, testes a/b, power bi, banco de dados, sql, testes a/b, power bi, banco de dados, sql, testes a/b, power bi, banco de dados, sql, testes a/b, power bi, banco de dados, sql, testes a/b",1
+power bi  banco de dados sql,1
+integrações api.,1
+"power bi  banco de dados sql, integrações api., power bi  banco de dados sql, integrações api., power bi  banco de dados sql, integrações api., power bi  banco de dados sql, integrações api., power bi  banco de dados sql, integrações api.",1
+pipelines,1
+"power bi, pipelines, banco de dados, sql, power bi, pipelines, banco de dados, sql, power bi, pipelines, banco de dados, sql, power bi, pipelines, banco de dados, sql, power bi, pipelines, banco de dados, sql",1
+banco de dados.,1
+"qlik sense, power bi, etl, sql, banco de dados., qlik sense, power bi, etl, sql, banco de dados., qlik sense, power bi, etl, sql, banco de dados., qlik sense, power bi, etl, sql, banco de dados., qlik sense, power bi, etl, sql, banco de dados.",1
+restful api,1
+postgresql,1
+"power bi, dax e linguagem m, integração de api, restful api, json, oauth, python, postgresql, power bi, dax e linguagem m, integração de api, restful api, json, oauth, python, postgresql, power bi, dax e linguagem m, integração de api, restful api, json, oauth, python, postgresql, power bi, dax e linguagem m, integração de api, restful api, json, oauth, python, postgresql, power bi, dax e linguagem m, integração de api, restful api, json, oauth, python, postgresql",1
+integração de api,1
+"dax, linguegem em m, power apps, power automate, power query, api, banco de dados, sql, dax, linguegem em m, power apps, power automate, power query, api, banco de dados, sql, dax, linguegem em m, power apps, power automate, power query, api, banco de dados, sql, dax, linguegem em m, power apps, power automate, power query, api, banco de dados, sql, dax, linguegem em m, power apps, power automate, power query, api, banco de dados, sql",1
+linguegem em m,1
+linguagem sql,1
+"odi, dw, stage, relacional, dimensional, linguagem sql, odi, dw, stage, relacional, dimensional, linguagem sql, odi, dw, stage, relacional, dimensional, linguagem sql, odi, dw, stage, relacional, dimensional, linguagem sql, odi, dw, stage, relacional, dimensional, linguagem sql",1
+"power bi, banco de dados, sql, excel., power bi, banco de dados, sql, excel., power bi, banco de dados, sql, excel., power bi, banco de dados, sql, excel., power bi, banco de dados, sql, excel.",1
+restful apis,1
+"postgre sql, dax e linguagem m, power bi, restful apis, json, oauth, python, postgre sql, dax e linguagem m, power bi, restful apis, json, oauth, python, postgre sql, dax e linguagem m, power bi, restful apis, json, oauth, python, postgre sql, dax e linguagem m, power bi, restful apis, json, oauth, python, postgre sql, dax e linguagem m, power bi, restful apis, json, oauth, python",1
+postgre sql,1
+"power bi, tableau, qlik, etl, sql, power bi, tableau, qlik, etl, sql, power bi, tableau, qlik, etl, sql, power bi, tableau, qlik, etl, sql, power bi, tableau, qlik, etl, sql",1
+qlik,1
+sql  power bi,1
+power platform,1
+"power platform, power apps, power automate, vba, python, sql, excel, power platform, power apps, power automate, vba, python, sql, excel, power platform, power apps, power automate, vba, python, sql, excel, power platform, power apps, power automate, vba, python, sql, excel, power platform, power apps, power automate, vba, python, sql, excel",1
+bancos estruturados/não-estruturados,1
+"sql, dataviz, excel, power bi., sql, dataviz, excel, power bi., sql, dataviz, excel, power bi., sql, dataviz, excel, power bi., sql, dataviz, excel, power bi.",1
+dataviz,1
+datastage,1
+linux additional information,1
+"datastage, oracle, linux additional information, datastage, oracle, linux additional information, datastage, oracle, linux additional information, datastage, oracle, linux additional information, datastage, oracle, linux additional information",1
+matemática,1
+estatísticas,1
+machine learning.,1
+"power bi, sql, excel, api, estatísticas, matemática, machine learning., power bi, sql, excel, api, estatísticas, matemática, machine learning., power bi, sql, excel, api, estatísticas, matemática, machine learning., power bi, sql, excel, api, estatísticas, matemática, machine learning., power bi, sql, excel, api, estatísticas, matemática, machine learning.",1
+extratores de dados,1
+"power bi, extratores de dados, mysql, banco de dados, erp, totvs datasul, power bi, extratores de dados, mysql, banco de dados, erp, totvs datasul, power bi, extratores de dados, mysql, banco de dados, erp, totvs datasul, power bi, extratores de dados, mysql, banco de dados, erp, totvs datasul, power bi, extratores de dados, mysql, banco de dados, erp, totvs datasul",1
+estatistica,1
+"looker, estatistica, python, r, api, banco de dados, sql, bigquery, postgre, bancos estruturados/não-estruturados, api., looker, estatistica, python, r, api, banco de dados, sql, bigquery, postgre, bancos estruturados/não-estruturados, api., looker, estatistica, python, r, api, banco de dados, sql, bigquery, postgre, bancos estruturados/não-estruturados, api., looker, estatistica, python, r, api, banco de dados, sql, bigquery, postgre, bancos estruturados/não-estruturados, api., looker, estatistica, python, r, api, banco de dados, sql, bigquery, postgre, bancos estruturados/não-estruturados, api.",1
+bigquery,1
+apis,1
+postgre,1
+api.,1
+git.,1
+"power bi, pacote office, excel , power bi, pacote office, excel , power bi, pacote office, excel , power bi, pacote office, excel , power bi, pacote office, excel",1
+"pacote office, excel avançado, power bi, sql, python, etl., pacote office, excel avançado, power bi, sql, python, etl., pacote office, excel avançado, power bi, sql, python, etl., pacote office, excel avançado, power bi, sql, python, etl., pacote office, excel avançado, power bi, sql, python, etl.",1
+"sql, power bi, excel, sql, power bi, excel, sql, power bi, excel, sql, power bi, excel, sql, power bi, excel",1
+"power bi, analysis services, azure cloud, power bi, analysis services, azure cloud, power bi, analysis services, azure cloud, power bi, analysis services, azure cloud, power bi, analysis services, azure cloud",1
+azure cloud,1
+analysis services,1
+star schema,1
+"sql, python, r, star schema, snowflake schema, bancos de dados relacionais, apis, power bi., sql, python, r, star schema, snowflake schema, bancos de dados relacionais, apis, power bi., sql, python, r, star schema, snowflake schema, bancos de dados relacionais, apis, power bi., sql, python, r, star schema, snowflake schema, bancos de dados relacionais, apis, power bi., sql, python, r, star schema, snowflake schema, bancos de dados relacionais, apis, power bi.",1
+snowflake schema,1
+bancos de dados relacionais,1
+"power bi, excel, etl, power bi, excel, etl, power bi, excel, etl, power bi, excel, etl, power bi, excel, etl",1

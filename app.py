@@ -28,7 +28,7 @@ if uploaded_file is not None:
         tab1, tab2 = st.tabs(["📊 Análise", "🗂 Dados Completos"])
 
         with tab1:
-            st.sidebar.header("Configurações de Filtros")
+            st.sidebar.header("Pesquise pelo Título da Vaga")
 
             # Filtros laterais
             posicao_options = ["Todas"] + sorted(data['posicao'].dropna().unique().tolist())
@@ -101,7 +101,7 @@ if uploaded_file is not None:
             )
 
         with tab2:
-            st.header("🗂 Dados Completos")
+            st.header("🗂 Visualização dos Completos das Vagas")
             st.write("Aqui estão os dados carregados do arquivo CSV:")
             st.dataframe(data, use_container_width=True)  # Exibir o DataFrame completo com ajuste ao layout
 

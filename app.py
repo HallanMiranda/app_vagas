@@ -9,7 +9,7 @@ def clean_data(df):
 
 # Configuração do Streamlit
 st.set_page_config(page_title="Ferramentas do Mercado", layout="wide")
-st.title("📊 Monitoramento de Ferramentas do Mercado")
+st.title("📊 Monitoramento de Vagas e Ferramentas do Mercado")
 
 # Upload do CSV
 uploaded_file = st.file_uploader("Carregue o arquivo CSV com as vagas de emprego", type=["csv"])

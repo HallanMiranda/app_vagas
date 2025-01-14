@@ -120,23 +120,32 @@
 
 
 
-
-
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import re
 
 # Função para limpar e normalizar os dados
 def clean_data(df):
     df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]
     return df.applymap(lambda x: ' '.join(x.strip().lower().split()) if isinstance(x, str) else x)
 
-# Função para limpar e padronizar os requisitos e competências
+# Função para substituir espaços por _ dentro de aspas simples
+def replace_spaces_inside_quotes(column):
+    if isinstance(column, str):
+        # Substituir espaços dentro de termos compostos por _
+        return re.sub(r"'(.*?)'", lambda m: f"'{m.group(1).replace(' ', '_')}'", column)
+    return column
+
+# Função para limpar e padronizar as colunas de requisitos e competências
 def clean_list_column(column):
     if isinstance(column, str):
-        cleaned = column.replace('[', '').replace(']', '').replace("'", "").strip().lower()
-        terms = [term.strip() for term in cleaned.split() if term.strip()]
+        # Aplicar substituição de espaços por _
+        column = replace_spaces_inside_quotes(column)
+        # Remover colchetes e aspas
+        column = column.replace("'", "").replace('[', '').replace(']', '').strip()
+        # Criar lista de termos limpos
+        terms = [term.strip() for term in column.split()]
         return ', '.join(terms)
     return ''
 
@@ -186,7 +195,7 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
             )
             competencias_input = st.sidebar.text_area(
                 "Digite as competências (separadas por vírgula):",
-                placeholder="Exemplo: python, sql, machine learning"
+                placeholder="Exemplo: python, sql, machine_learning"
             )
 
             # Aplicar os filtros
@@ -210,7 +219,6 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
 
             # Estatísticas Gerais
             with tab1:
-                
                 total_vagas = len(filtered_data)
                 st.metric(label="Total de Vagas Filtradas", value=total_vagas)
 
@@ -230,28 +238,21 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
                     y='Requisito',
                     orientation='h',
                     text='Quantidade',
-                    title="Top 20 Ferramentas Mais Requisitadas",
+                    title="Top 20 Requisitos Mais Requisitados",
                     labels={'Quantidade': 'Ocorrências', 'Requisito': 'Requisitos'}
                 )
 
-                # Ajustar o layout para aumentar o destaque do gráfico
+                # Ajustar o layout do gráfico
                 fig_requisitos.update_traces(textposition='outside', marker=dict(line=dict(width=1)))
                 fig_requisitos.update_layout(
-                    yaxis=dict(autorange="reversed", title_font=dict(size=18)),  # Inverte a ordem e aumenta a fonte
-                    xaxis=dict(title_font=dict(size=18)),  # Aumenta o tamanho da fonte do eixo X
-                    margin=dict(l=200, r=50, t=100, b=50),  # Aumenta a margem esquerda para barras longas
-                    height=800  # Aumenta a altura do gráfico para dar mais espaço
+                    yaxis=dict(autorange="reversed"),
+                    margin=dict(l=200, r=50, t=100, b=50),
+                    height=800
                 )
-
                 st.plotly_chart(fig_requisitos, use_container_width=True)
-
 
             # Gráfico de Competências
             with tab2:
-                st.header("Estatísticas Gerais")
-                total_vagas = len(filtered_data)
-                st.metric(label="Total de Vagas Filtradas", value=total_vagas)
-
                 competencias_counts = (
                     filtered_data['competencias']
                     .str.split(', ')
@@ -262,18 +263,21 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
                 competencias_df.columns = ['Competência', 'Quantidade']
 
                 fig_competencias = px.bar(
-                    competencias_df,
+                    competencias_df.head(20),  # Mostra apenas os 20 primeiros para destaque
                     x='Quantidade',
                     y='Competência',
                     orientation='h',
                     text='Quantidade',
-                    title="Top Competências Mais Requisitadas",
+                    title="Top 20 Competências Mais Requisitadas",
                     labels={'Quantidade': 'Ocorrências', 'Competência': 'Competências'}
                 )
-                fig_competencias.update_traces(textposition='outside')
+
+                # Ajustar o layout do gráfico
+                fig_competencias.update_traces(textposition='outside', marker=dict(line=dict(width=1)))
                 fig_competencias.update_layout(
                     yaxis=dict(autorange="reversed"),
-                    margin=dict(l=150, r=50, t=50, b=50)
+                    margin=dict(l=200, r=50, t=100, b=50),
+                    height=800
                 )
                 st.plotly_chart(fig_competencias, use_container_width=True)
 
@@ -281,22 +285,13 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
             with tab3:
                 st.header("🗂 Dados Completos")
                 st.write("Aqui estão os dados carregados do arquivo CSV:")
-                st.dataframe(filtered_data, use_container_width=True)
+                st.dataframe(data1, use_container_width=True)
 
         else:
-            missing_columns = required_columns - set(combined_data.columns)
+            missing_columns = required_columns - set(data2.columns)
             st.error(f"O arquivo CSV não contém as colunas necessárias: {', '.join(missing_columns)}.")
 
     except Exception as e:
         st.error(f"Erro ao carregar ou processar os arquivos: {e}")
 else:
     st.write("Carregue ambos os arquivos CSV para começar.")
-
-
-
-
-
-
-
-
-

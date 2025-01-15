@@ -490,7 +490,7 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
                 st.dataframe(filtered_data, use_container_width=True)
 
         else:
-            missing_columns = required_columns - set(combined_data.columns)
+            missing_columns = required_columns - set(data1.columns)
             st.error(f"O arquivo CSV não contém as colunas necessárias: {', '.join(missing_columns)}.")
 
     except Exception as e:
